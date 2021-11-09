@@ -1,0 +1,15 @@
+h1{ /* estilo de título */
+    color: #9b2226;
+}
+a:link, a:visited{
+    background-color: #001219;
+    color: #94d2bd;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block; /* para que no se encimen los botones*/
+}
+a:hover, a:active{
+    background-color:#ee9b00;
+    color:#001219;
+}

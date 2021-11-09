@@ -1,0 +1,16 @@
+ol{
+    list-style: none;
+    counter-reset: contador; /* inicia el contador en la lista */
+}
+ol li{
+    counter-increment: contador; /* indica que se va a utilizar en cada elemento, solo aumentara */
+}
+ol li::before{
+    content:'Curso ' counter(contador) ') '; /* texto aue aparece antes de la lista */
+    /* se establece variable counter */
+    color: #ff600f;
+
+}
+ol li::after{
+    content: '.';/* contenido despues de cada item de la lista */
+}

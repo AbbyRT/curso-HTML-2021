@@ -1,0 +1,26 @@
+/* body{
+    background-color:#fdfcdc;
+} */
+h1{
+    color:#ff9f1c; 
+}
+/* link por default */
+a:link {
+    color: #e71d36;
+    text-decoration: none;/* para quitar subrayado */
+}
+/* ya presionado */
+a:visited{
+    color: #2ec4b6;
+    text-decoration: none;
+}
+/* cuando el cursor esta encima del link */
+a:hover{
+    color: #011627;
+    text-decoration: underline;
+}
+/* cuando se presiona el link */
+a:active{
+    color: #ff9f1c;
+
+}

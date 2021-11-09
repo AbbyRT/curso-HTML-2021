@@ -1,0 +1,27 @@
+h1{
+    color: darkcyan;
+    text-align: center;
+}
+p{ /* para todos los p del documento */
+    color:palevioletred;
+    background-color: turquoise;
+    padding: 15px;/* un valor se aplica a los 4 lados */
+    border: 10px solid gainsboro;
+    /* margin: 50px; */ /* se aplica a todos */
+    /* margin-top: 40px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px; */
+    /* simplificar : */
+    /* orden: top, right, bottom, left */
+    /* margin: 40px 10px 20px 10px; */
+    /* se peuden proporcionar menos valores:
+     margin: 40px 10px 20px */ /* arriba, derecha -izq, abajo
+    margin: 40px 10px */ /* arriba-abajo, derecha - izquierda */
+    
+    /* para centrar elementos de manera horizontal: */
+    margin: auto 50px;  /* ccentra caja */
+    text-align: center; /* para alinear texto */
+
+
+}

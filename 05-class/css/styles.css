@@ -1,0 +1,38 @@
+table{
+    width: 100%; /* para que ocipe todo el ancho de pantalla */
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;  /* para que solo se vea 1 sola linea */
+    padding: 5px;
+    /* es posible pomer borde mas ancho, pero no se peude usar collapse */
+    /* border-spacing: 5px; */
+}
+/* como modificar centrado de texto */
+/* td{
+    text-align: center;
+}
+th{
+    text-align:left;
+} */
+caption{
+    color: #e64946;
+    font-family: 'Trocchi', serif;
+    font-size: 45px;
+    line-height: 70px; /* altura total de texto, incluye espacios arriba y abaji */
+}
+th{
+    color:#f1faee;
+    background-color:#1d3557;
+}
+tr:nth-child(even){
+    /* funcion nth-child()
+    even: selecciona renglones pares
+    odd: selecciona renglones impares 
+    nota: se considera a la cabecera como primer renglon*/
+    background-color: #f1faee;
+}
+
+tr:nth-child(odd){
+    background-color: #a8dadc;
+}
