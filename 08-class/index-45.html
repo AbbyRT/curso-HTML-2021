@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+</head>
+
+<body>
+    <!-- UN FORMULario capta la info del susuario :v -->
+    <h1>Formularios en HTML</h1>
+    <form   method="POST" target="_self" >
+        <!-- action: que url va a procesar el servidor -->
+    <!--<form novalidate action="mi_servidor"> : asi los campos no tienen que tener info al momento de enviar -->
+        <fieldset> <!-- agrega marco a formulario -->
+            <legend>Datos personales:</legend>
+            <!-- agrega titulo y lo coloca en el borde  -->
+
+            <label for="idPersona">Persona:</label><br/>
+            <input type="text" id="idPersona" name="idPersona" readonly="true" value="100" disabled="true"/> <br /> <!-- solo se visualiza valor, no se puede modificar, la info si se envi a al servidor -->
+
+            <input type="hidden" id="sistema" name="sistema" value="SAP" /><!-- el usuario no vera esta info -->
+
+            <label for="nombre">Nombre:</label> <br />
+            <input type="text" id="nombre" name="nombre" value="Carlos" required="true" /> <br />
+
+            <!-- con placeholder se pued esolo sostitur trxto :v -->
+
+            <label for="apellido">Apellido:</label> <br />
+            <input type="text" id="apellido" name="apellido" placeholder="escribe tu apellido :v" required="true" />
+            <br />
+
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" /> <br />
+
+            <label for="password">Password:</label> <br />
+            <input type="password" id="password" name="password" required="true" /> <br />
+
+            <label for="edad">Edad:</label><br />
+            <input type="number" id="edad" name="edad" /><br />
+
+            <label for="altura">Altura:</label><br />
+            <input type="number" id="altura" name="altura" step="any" /><br />
+
+            <label>Género</label>
+            <input type="radio" id="femenino" name="genero" value="femenino" />
+            <label for="femenino">femenino</label><br />
+
+            <input type="radio" id="masculino" name="genero" value="masculino" />
+            <label for="masculino">masculino</label><br />
+
+            <!-- en valor se peude poner lo que sea :v -->
+
+            <label>Género música favorita</label><br />
+            <input type="checkbox" id="clasica" name="musica" value="clasica">
+            <label for="clasica">Clásica</label><br />
+
+            <input type="checkbox" id="jazz" name="musica" value="jazz">
+            <label for="jazz">Jazz</label><br />
+
+            <label for="autos">Marca auto favorita:</label><br />
+            <!-- elegir una  opcion de un listado -->
+            <select id="autos" name="autos" multiple="true">
+                <option value="volvo">Volvo</option>
+                <option value="bmw">BMW</option>
+                <option value="audi" selected="true">Audi</option>
+            </select><br />
+
+            <label for="comentario">Comentario:</label><br />
+            <textarea id="comentario" name="comentario" rows="2" cols="30">Este es mi comentario
+        </textarea>
+
+            <input type="submit" value="Enviar" />
+            <input type="submit" formnovalidate="formnovalidate" value="Enviar sin validar" />
+            <input type="reset" value="Restablecer"/>
+        </fieldset>
+    </form>
+    <!-- metodo get y post de form
+    query string: lo que se envia al servidor
+1)get: manda la info en la url al servidor
+2)post: info se envia dentro del cuerpo del mensaje -->
+
+</body>
+
+</html>
